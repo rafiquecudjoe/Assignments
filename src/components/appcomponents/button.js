@@ -3,7 +3,7 @@
 function Button(props) {
     
     return (
-        <button style={{backgroundColor:props.color}} OnclickButton={props.OnclickButton}>
+        <button style={{backgroundColor:props.color}} >
            
             
             {props.text}

@@ -1,5 +1,5 @@
 
-import React, { useState } from "react"
+import React, { useState } from "react";
 import Navbar from "../appcomponents/navbar";
 import Button from "../appcomponents/button";
 import TextArea from "../appcomponents/TextArea";
@@ -11,12 +11,12 @@ import SelectOptions from "../appcomponents/SelectOption";
 
 function Home() {
 
-    const [color, setColor] = useState("black")
-    const [text, setText] = useState("Hello")
+    const [color, setColor] = useState('black');
+    const [text, setText] = useState('Hello');
 
-    function ChangeColorText() {
-        setColor( "Red")
-        setText ( "Hi")
+    function ChangeColorText(color,text) {
+        setColor(color)
+        setText (text)
     }
     
 
@@ -30,7 +30,7 @@ function Home() {
             <Button text="Login" color="#1e88e5" />
             <Button text="Cancel" color="#880e4f" />
             <Button text="Submit" color="#003300" />
-            <Button text={text} color={color} onClickButton={ChangeColorText}/>
+            <Button text={text} color={color} onClickButton={() => ChangeColorText('red','hey')}/>
             {/* <InputField /> */}
             <TextArea/>
             
@@ -52,9 +52,15 @@ function Home() {
                 <InputField type="radio" />
                 <h1>Radio</h1>
                 <InputField type="checkbox" name="Checkbox" />
-                <Typography color="red" font="italic" />
-                <Typography color="blue" />
-                <Typography color="green" />
+                <Typography color="red" fontFamily="Ariel" />
+                <Typography color="blue" fontFamily="Times New Roman"/>
+                <Typography color="green" fontFamily="Lucida Console"/>
+
+                <Button 
+            text="Submit" 
+            color={color} 
+            onClickButton={() => ChangeColorText('blue','hi')
+            }/>
                 
             
             </div>

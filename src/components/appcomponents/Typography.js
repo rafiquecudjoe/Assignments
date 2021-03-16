@@ -2,7 +2,7 @@ function Typography(props) {
      
     return (
         <div>
-           <h1 style={{color:props.color,font:props.font}}>Typography</h1>
+           <h1 style={{fontFamily:props.fontFamily}}>Typography</h1>
         </div>
     )
 };
