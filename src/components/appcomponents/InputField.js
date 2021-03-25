@@ -1,17 +1,20 @@
 
+
+
+
 function InputField(props) {
-    
     return (
-        <div>
-            <input type={props.type} placeholder={props.placeholder}/>
-         
-            
-            
-
-    </div>
-)
-
-
+        <>
+            <input
+                placeholder={props.placeholder}
+                className={props.className}
+                type={props.type}
+                value={props.value}
+            />
+        </>
+    )
+    
 }
 
-export default InputField;
+
+export default InputField ;
