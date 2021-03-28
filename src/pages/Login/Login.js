@@ -3,7 +3,7 @@ import pic from "./img/login.svg";
 import pic3 from "./img/avatar.svg";
 import pic4 from "./img/login-green2.svg";
 import "./login.css";
-import Button from "../../components/appcomponents/Button"
+import Button from "../../components/appcomponents/button"
 import InputField from "../../components/appcomponents/InputField"
 
 
@@ -71,7 +71,7 @@ function Login() {
             <a href="#">Forgot Password?</a>
 
             <Button className=""
-              onClick={() => gotoPage("/Signup")}
+              // onClick={() => gotoPage("/Signup")}
               text="Login" />
           </form>
         </div>
