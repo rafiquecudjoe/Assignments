@@ -7,6 +7,36 @@ import pic3 from "../Login/img/avatar.svg";
 
 function Signup() {
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmpassword, setConfirmpassword] = useState('');
+
+
+
+    function UpdateName(e) {
+        setName(e.target.value)
+    }
+
+    function UpdateEmail(e) {
+        setEmail(e.target.value)
+    }
+    function UpdateUsername(e) {
+        setUsername(e.target.value)
+    }
+    function UpdatePassword(e) {
+        setPassword(e.target.value)
+    }
+    function UpdateConfirmpassword(e) {
+        setConfirmpassword(e.target.value)
+    }
+
+
+
+    function Signup(e) {
+        e.preventDefault();
+    }
 
 
 
@@ -30,7 +60,7 @@ function Signup() {
                   placeholder="Name"
                   type="text"
                   className={Mycss1.input}
-                  //   onChange={Updateusername}
+                    onChange={UpdateName}
                 />
               </div>
             </div>
@@ -42,8 +72,8 @@ function Signup() {
                   placeholder="Email"
                   type="email"
                   className={Mycss1.input}
-                  //   onChange={Updatepassword}
-                  // value={password}
+                    onChange={UpdateEmail}
+                
                 />
               </div>
             </div>
@@ -54,8 +84,8 @@ function Signup() {
                   placeholder="Username"
                   type="text"
                   className={Mycss1.input}
-                  //   onChange={Updatepassword}
-                  // value={password}
+                    onChange={UpdateUsername}
+                
                 />
               </div>
             </div>
@@ -66,8 +96,8 @@ function Signup() {
                   placeholder="Password"
                   type="password"
                   className={Mycss1.input}
-                  //   onChange={Updatepassword}
-                  // value={password}
+                    onChange={UpdatePassword}
+                  
                 />
               </div>
             </div>
@@ -78,7 +108,7 @@ function Signup() {
                   placeholder="Confirm Password"
                   type="password"
                   className={Mycss1.input}
-                  //   onChange={Updatepassword}
+                    onChange={UpdateConfirmpassword}
                   // value={password}
                 />
               </div>
