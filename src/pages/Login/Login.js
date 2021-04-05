@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import pic from "./img/login.svg";
 import pic3 from "./img/avatar.svg";
-import pic4 from "./img/login-green2.svg";
-import "./login.css";
+import pic4 from "./img/authen.svg";
+import Mycss from  "./login.module.css";
 import Button from "../../components/appcomponents/button"
 import InputField from "../../components/appcomponents/InputField"
 
@@ -34,34 +34,34 @@ function Login() {
  
   return (
     <>
-      <img className="wave" src={pic4}></img>
-      <div className="container">
-        <div className="img"></div>
-        <div className="login-content">
-          <form className="form-control">
+      <img className={Mycss.wave} src={pic4}></img>
+    <div className={Mycss.container}>
+        <div className={Mycss.img}></div>
+        <div className={Mycss.login_content}>
+          <form className={Mycss.form_control}>
             <img src={pic3} />
-            <h2 className="ttile">Welcome</h2>
+            <h2 className={Mycss.title}>Welcome</h2>
 
             {/* Username section */}
-            <div className="input-div one">
-              <div className="div">
+            <div className={Mycss.input_div}>
+              <div className={Mycss.divdiv}>
                 <InputField
                   // value={username}
                   placeholder="Username"
                   type="text"
-                  className="input"
+                  className={Mycss.input}
                   onChange={Updateusername}
                 />
               </div>
             </div>
 
             {/* Password Section */}
-            <div className="input-div pass">
-              <div className="div">
+            <div className={Mycss.input_div}>
+              <div className={Mycss.div}>
                 <InputField
                   placeholder="Password"
                   type="password"
-                  className="input"
+                  className={Mycss.input}
                   onChange={Updatepassword}
                   // value={password}
                 />
