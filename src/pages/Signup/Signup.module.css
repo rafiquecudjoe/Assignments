@@ -38,6 +38,8 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    
+    
   }
   
   .img img {
@@ -85,7 +87,7 @@
   
   .input_div > div {
     position: relative;
-    height: 45px;
+    height: 20px;
   }
   
   .input_div > div > h5 {
