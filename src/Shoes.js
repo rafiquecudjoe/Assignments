@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useContext } from "react";
-import { myContext } from "./stores/context"
+import { myContext } from "./store/context"
 
 
 
