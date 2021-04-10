@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom"
+import { MyProvider } from './stores/context';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MyProvider>
+    <BrowserRouter>
+      <App />
+      </BrowserRouter>
+    </MyProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
