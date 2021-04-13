@@ -22,6 +22,20 @@ Router.post("/login", function (request, response) {
       response.send({ message: "Login Failed" });
     }
 });
+
+
+  Router.post("/signup", function (request, response) {
+    var newUser = {
+      name: request.body.name,
+      password: request.body.password,
+      email: request.body.email,
+     username: request.body.username,
+      country: request.body.country,
+    };
+    console.log(newUser);
+  
+    response.status(300).send("Signup Successful");
+})
   
 
 module.exports = Router;
